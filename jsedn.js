@@ -1524,18 +1524,18 @@ require.register("jsedn/lib/reader.js", function(module, exports, require){
   };
 
   if (typeof window === "undefined") {
-    fs = require("fs");
-    module.exports.readFile = function(file, cb) {
-      return fs.readFile(file, "utf-8", function(err, data) {
-        if (err) {
-          throw err;
-        }
-        return cb(parse(data));
-      });
-    };
-    module.exports.readFileSync = function(file) {
-      return parse(fs.readFileSync(file, "utf-8"));
-    };
+    // fs = require("fs");
+    // module.exports.readFile = function(file, cb) {
+    //   return fs.readFile(file, "utf-8", function(err, data) {
+    //     if (err) {
+    //       throw err;
+    //     }
+    //     return cb(parse(data));
+    //   });
+    // };
+    // module.exports.readFileSync = function(file) {
+    //   return parse(fs.readFileSync(file, "utf-8"));
+    // };
   }
 
 }).call(this);
