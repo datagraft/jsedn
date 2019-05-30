@@ -29,6 +29,6 @@ class Tagged extends Prim
 		
 tagActions =
 	uuid: tag: (new Tag "uuid"), action: (obj) -> obj
-	inst: tag: (new Tag "inst"), action: (obj) -> new Date Date.parse obj
+	inst: tag: (new Tag "inst"), action: (obj) -> obj
 	
 module.exports = {Tag, Tagged, tagActions}
