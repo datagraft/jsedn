@@ -1629,7 +1629,7 @@ require.register("jsedn/lib/tags.js", function(module, exports, require){
     inst: {
       tag: new Tag("inst"),
       action: function(obj) {
-        return new Date(Date.parse(obj));
+        return obj;
       }
     }
   };
